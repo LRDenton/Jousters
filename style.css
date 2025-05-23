@@ -1,0 +1,139 @@
+:root{
+    --base: #F3F3E0;
+    --blue0: #183B4E;
+    --blue1: #27548A;
+    --yellow: #DDA853;
+    --red: #CE4255;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EEEEEE;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--base);
+}
+
+.header{
+    background-color: var(--base);
+    position:relative;
+    height: 200px;
+    width: 100%;
+}
+
+
+#jousters{
+    color: var(--blue0);
+    font-size: 6vw;
+    font-weight: 550;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#spacer{
+    background-color: var(--base);
+    width: 100%;
+    height: 20px;
+}
+
+.card{
+    background-color: var(--blue0);
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.card_desc{
+    background-color: var(--blue0);
+    position: absolute;
+    height: 400px;
+    width: 60%;
+}
+
+.card_desc_odd{
+    right:0;
+}
+
+.card_desc_even{
+    left:0;
+}
+
+.card_photo{
+    background-color: var(--base);
+    position: absolute;
+    height: 400px;
+    width: 40%;
+    border: black, 2px, solid;
+}
+
+.card_photo_odd{
+    left:0;
+}
+.card_photo_even{
+    right:0;
+}
+
+.card_title{
+    width: max-content;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+
+.card_text{
+    color: var(--base);
+    text-align: justify;
+    width: 70%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.learn_more{
+  background-color: var(--base);
+  border: none;
+  color: var(--blue0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+#contact{
+  background-color: var(--red);
+  border: none;
+  color: var(--base);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: fixed;
+  top: 50%;
+  right:0;
+  transform: rotate(270deg) translatex(25%) translateY(100%);
+}
