@@ -1,0 +1,83 @@
+:root{
+    --base: #F3F3E0;
+    --blue0: #183B4E;
+    --blue1: #27548A;
+    --yellow: #DDA853;
+    --red: #CE4255;
+
+}
+
+.afterschool_text_box{
+    background-color: var(--blue0);
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.afterschool_text{
+    color: var(--base);
+    text-align: justify;
+    width: 70%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.schools{
+    background-color: var(--base);
+    color: var(--blue0);
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.schools_header_box{
+    background-color: var(--base);
+    position:relative;
+    height: 100px;
+    width: 100%;
+}
+
+.schools_header{
+    font-size: 3vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.schools_list{
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.schools_list_half{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.schools_list_left{
+    left: 0;
+}
+
+.schools_list_right{
+    right: 0;
+}
+
+.schools_list_box{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.town_name{
+    font-size: 2vw;
+}
+
+.school_name{
+    font-size: 1.5vw;
+}
