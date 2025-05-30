@@ -1,0 +1,41 @@
+:root{
+    --base: #F3F3E0;
+    --blue0: #183B4E;
+    --blue1: #27548A;
+    --yellow: #DDA853;
+    --red: #CE4255;
+
+}
+
+#contact_header{
+    background-color:var(--blue0);
+}
+
+#contact_header_text{
+    color: var(--base);
+}
+
+.contact_info{
+    position: relative;
+    width: 100%;
+    min-height: 75vh; /* or whatever height you want */
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
+    padding: 1px;             /* prevents margin collapse */
+}
+
+.contact_info_text{
+    color: var(--blue0);
+    font-size: 2vw;
+    text-align: justify;
+    width: 80%;
+    margin: 0;
+}
+
+a{
+    color: var(--blue0);
+}
+a:visited{
+    color: var(--blue0);
+}

@@ -6,7 +6,7 @@
     --red: #CE4255;
 }
 
-.afterschool_text_box {
+.holiday_text_box {
     background-color: var(--blue0);
     position: relative;
     width: 100%;
@@ -18,8 +18,9 @@
 }
 
 
-.afterschool_text {
+.holiday_text {
     color: var(--base);
+    font-size: 1.5vw;
     text-align: justify;
     width: 70%;
     margin: 0;
@@ -80,6 +81,6 @@
     font-size: 2vw;
 }
 
-.school_name{
+.holiday_school{
     font-size: 1.5vw;
 }

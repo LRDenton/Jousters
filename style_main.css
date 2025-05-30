@@ -4,7 +4,6 @@
     --blue1: #27548A;
     --yellow: #DDA853;
     --red: #CE4255;
-
 }
 
 * {
@@ -14,7 +13,7 @@
 }
 
 body{
-    background-color: #EEEEEE;
+    background-color: var(--base);
     padding: 0;
     margin: 0;
 }
@@ -31,8 +30,12 @@ a:visited{
 .header{
     background-color: var(--base);
     position:relative;
-    height: 200px;
     width: 100%;
+    min-height: 30vh; /* or whatever height you want */
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
+    padding: 1px;             /* prevents margin collapse */
 }
 
 
@@ -40,11 +43,14 @@ a:visited{
     color: var(--blue0);
     font-size: 6vw;
     font-weight: 550;
+    text-align: center;
     width: fit-content;
+    /*
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    */
 }
 
 #spacer{
@@ -55,19 +61,33 @@ a:visited{
 
 
 #contact{
-  background-color: var(--red);
-  border: none;
-  color: var(--base);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  position: fixed;
-  top: 50%;
-  right:0;
-  transform: rotate(270deg) translatex(25%) translateY(100%);
+    background-color: var(--red);
+    border: none;
+    color: var(--base);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: fixed;
+    top: 50%;
+    right:0;
+    transform: rotate(270deg) translatex(25%) translateY(100%);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.2s ease, color 0.2s ease, border 0.2s ease;
 }
+
+#contact:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: rotate(270deg) translateX(25%) translateY(100%) scale(1.03);
+}
+
+#contact:active {
+    background-color: var(--base);
+    color: var(--red);
+    border: 2px solid var(--red); /* thin border using original background color */
+}
+
 
 ul, li {
   margin: 0;

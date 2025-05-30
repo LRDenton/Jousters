@@ -1,0 +1,25 @@
+:root{
+    --base: #F3F3E0;
+    --blue0: #183B4E;
+    --blue1: #27548A;
+    --yellow: #DDA853;
+    --red: #CE4255;
+}
+
+.about_text_box{
+    background-color: var(--blue0);
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* or whatever height you want */
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
+    padding: 1px;             /* prevents margin collapse */
+}
+
+.about_text{
+    color: var(--base);
+    text-align: justify;
+    width: 70%;
+    margin: 0;
+}
